@@ -1,0 +1,19 @@
+:root {
+  --bg: #0e0e0e;
+  --surface: #181818;
+  --text: #f4f4f4;
+  --muted: #aaaaaa;
+  --accent: #8B0000;
+}
+body { margin: 0; font-family: Inter, Arial, sans-serif; background: var(--bg); color: var(--text); padding: 1rem 2rem 3rem; }
+.topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.topbar h1 { font-size: 1.5rem; }
+.topbar span { color: var(--accent); margin-inline-start: .5rem; }
+.card { background: var(--surface); border: 1px solid #2b2b2b; border-radius: 10px; padding: 1rem; margin-bottom: 1rem; }
+.filters { display: flex; gap: .5rem; flex-wrap: wrap; }
+button, select, input { background: #111; color: #fff; border: 1px solid #3a3a3a; border-radius: 8px; padding: .5rem .7rem; }
+button { background: var(--accent); border-color: #a40000; cursor: pointer; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap: 1rem; }
+.story { background: var(--surface); padding: .8rem; border-radius: 10px; border:1px solid #2f2f2f; }
+.story .meta { color: var(--muted); font-size: .88rem; }
+[dir="rtl"] { direction: rtl; }
