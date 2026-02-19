@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Al Dar Al Hamraa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Al Dar Al Hamraa <span>الدار الحمراء</span></h1>
+    <div>
+      <button id="langToggle">AR</button>
+    </div>
+  </header>
+
+  <section class="hero card">
+    <h2 data-i18n="heroTitle">Digital Storytelling Marketplace</h2>
+    <p data-i18n="heroBody">Browse immersive narrative PDFs and support independent writers.</p>
+  </section>
+
+  <section class="filters card">
+    <select id="categoryFilter"><option value="">All Categories</option></select>
+    <select id="sortFilter">
+      <option value="newest">Newest</option>
+      <option value="popular">Most Popular</option>
+    </select>
+    <input id="maxPrice" type="number" step="0.01" placeholder="Max Price"/>
+    <button id="applyFilters">Apply</button>
+  </section>
+
+  <section>
+    <h3 data-i18n="featured">Featured Stories</h3>
+    <div id="featuredStories" class="grid"></div>
+  </section>
+
+  <section>
+    <h3 data-i18n="marketplace">Marketplace</h3>
+    <div id="stories" class="grid"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
